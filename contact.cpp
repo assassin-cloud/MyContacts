@@ -41,8 +41,9 @@ int main(){
                 cout << "How many contacts to add: ";
                 cin >> ammount;
                 cout << endl;
-                if(ammount > 1000){
-                    cout << "Can't add more contacts" << endl;
+                if(ammount + size > 1000 || ammount < 1){
+                    cout << "Can't add contacts" << endl;
+                    welcome();
                 }
             else{
                 for(int i=size;i<ammount+size;i++){
